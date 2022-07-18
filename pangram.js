@@ -109,7 +109,7 @@ function setSlide(x) {
 //Scroll Effect for Cards
 window.addEventListener('scroll', () => {
     let val = window.scrollY
-    document.querySelector('.sc').innerHTML = val
+    // document.querySelector('.sc').innerHTML = val
     if (val > 1104) {
         //1104-2090
         let slope1 = (180 - 0) / (1104 - 2090);
@@ -120,9 +120,9 @@ window.addEventListener('scroll', () => {
         ----  =  slope(val-y1)+x1
         x-x1
         */
-        document.querySelector('.Cards-row-2').style.marginTop = `${slope1 * (val - 1104) * 1.6 + 180}px`;
-        document.querySelector('.Cards-row-3').style.marginTop = `${slope2 * (val - 1104) * 1.6 + 60}px`;
-        document.querySelector('.Cards-row-4').style.marginTop = `${slope3 * (val - 1104) * 1.6 + 150}px`;
+       document.querySelector('.Cards-row-2').style.marginTop = `${slope1 * (val - 1104) * 1.6 + 180}px`;
+       document.querySelector('.Cards-row-3').style.marginTop = `${slope2 * (val - 1104) * 1.6 + 60}px`;
+       document.querySelector('.Cards-row-4').style.marginTop = `${slope3 * (val - 1104) * 1.6 + 150}px`;
     }
     else {
         document.querySelector('.Cards-row-2').style.marginTop = `${180}px`;
