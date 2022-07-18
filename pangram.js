@@ -142,11 +142,15 @@ function toggleBurger(){
     let burger2=document.querySelector('.burger2')
 
     if(burger1.style.height==0){
+        burger2.style.transitionDelay="0s";
+        burger1.style.transitionDelay="0.25s";
         burger1.style.padding="30px";
         burger1.style.height="68vh";
         burger2.style.height="92vh";
     }
     else{
+        burger1.style.transitionDelay="0s";
+        burger2.style.transitionDelay="0.25s";
         burger1.style.padding="0px";
         burger1.style.height="0vh";
         burger2.style.height="0vh";

@@ -56,6 +56,7 @@ body {
     width: 30px;
     margin: 7px;
     /* position: fixed; */
+    transition: 0.5s;
 }
 
 .navbar-ele-5:hover .bar1 {
@@ -108,12 +109,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .burger1 {
+    transition: 0.8s;
+    /* transition-delay: 0.5s; */
     position: fixed;
     z-index: 5;
     height: 68vh;
     background-color: white;
     width: 100vw;
-    box-shadow: 0 2px 10px rgb(228, 228, 228);
+    box-shadow: 0 2px 10px rgb(198, 198, 198);
     display: flex;
     padding: 30px;
     overflow: hidden;
@@ -121,18 +124,19 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
 }
 .burger1-ele-1{
-    flex: 4;
+    flex: 6;
     display: flex;
     flex-direction: column;
 }
 .burger1-ele-2{
-    flex: 2;
+    flex: 3;
 }
 .burger1-ele-3{
     flex: 1;
 }
 
 .burger2 {
+    transition: 1s;
     position: fixed;
     z-index: 4;
     height: 92vh;
@@ -142,7 +146,6 @@ body::-webkit-scrollbar-thumb {
     align-items: flex-end;
     overflow: hidden;
     height: 0;
-    padding: 0;
 }
 .burger2-ele-1{
     flex: 3;
