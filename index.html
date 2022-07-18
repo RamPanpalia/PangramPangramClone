@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+PangramPangramClone
+ -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Pangram Pangram Foundry — Free to Try Quality Fonts and Typefaces
+  </title>
+  <link rel="manifest"
+    href="//cdn.shopify.com/s/files/1/2642/6578/t/28/assets/site.webmanifest?v=181914326439945462071613662948" />
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="//cdn.shopify.com/s/files/1/2642/6578/t/28/assets/apple-touch-icon.png?v=102065962077532911441618701267" />
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="//cdn.shopify.com/s/files/1/2642/6578/t/28/assets/favicon-32x32.png?v=112257638596868017101618701268" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="//cdn.shopify.com/s/files/1/2642/6578/t/28/assets/favicon-16x16.png?v=135129771641340778561618701270" />
+  <link rel="mask-icon"
+    href="//cdn.shopify.com/s/files/1/2642/6578/t/28/assets/safari-pinned-tab.svg?v=121747892186145079321613662884"
+    color="#000000" />
+  <link rel="stylesheet" href="pangram.css" />
+</head>
+<!-- 
+    https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Header-Fragment.jpg?v=58394991578446363541655194298
+    https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Header-NM2.jpg?v=159206788359420893191652739292
+    https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Header-Radio.jpg?v=44003937916725635671653331288
+    https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Header-Mori.jpg?v=138821603627941983301650295023
+    https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Homepage-FSP.jpg?v=137312276529332582651642608202
+ -->
+
+<body>
+  <div class="sc">unchanged</div>
+  <!-- <div class="sm">0</div> -->
+  <div class="burger1">
+    <div class="burger1-ele-1">
+      <div style="font-size: 18px;">
+        Pangram Pangram
+        <span style="font-size: 30px;">●</span>
+        Foundry
+      </div>
+      <div class="payment-methods" style="margin-top: 280px;">
+        <img src="assets/payment-methods/apple-pay.svg" alt="">
+        <img class="special-img" src="assets/payment-methods/paypal.svg" alt="">
+        <img src="assets/payment-methods/master-card.svg" alt="">
+        <img src="assets/payment-methods/visa.svg" alt="">
+      </div>
+    </div>
+    <div class="burger1-ele-2">
+      <div class="flex-0">
+        <div onclick="toggleBurger()">Close</div>
+        <div style="font-size: 22px;">All Fonts</div>
+        <div style="font-size: 22px;">Font Starter Pack</div>
+        <div style="font-size: 22px;">The Pangram Paper</div>
+        <div style="font-size: 22px;">Font in Use</div>
+        <div style="font-size: 22px;">About</div>
+        <div style="font-size: 22px;">Cart⁰</div>
+      </div>
+      <div class="social-media" style="margin-top:100px;">
+        <div>
+          <img src="assets/social-media/facebook-round.svg" alt="">
+        </div>
+        <div>
+          <img src="assets/social-media/instagram-round.svg" alt="">
+        </div>
+        <div>
+          <img src="assets/social-media/twitter-round.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="burger1-ele-3" onclick="toggleBurger()">
+      <div class="navbar-ele-5">
+        <div class="bar bar1" style="background-color: black;"></div>
+        <div class="bar bar2" style="background-color: black;"></div>
+      </div>
+    </div>
+
+  </div>
+  <div class="burger2">
+    <div class=" burger2-ele-1" style="font-size: 160px;">
+      ©2022
+    </div>
+    <div class="flex-0 burger2-ele-2">
+      <div>FAQs</div>
+      <div>Font Licenses</div>
+    </div>
+    <div class="flex-0 burger2-ele-3">
+      <div>EULA</div>
+      <div>Contact</div>
+    </div>
+  </div>
+  <div class="carousal">
+    <div class="navbar">
+      <div class="navbar-ele-1">Pangram Pangram ● Foundry</div>
+      <div class="navbar-ele-2">All Font</div>
+      <div class="navbar-ele-3">Fonts Starter Pack</div>
+      <div class="navbar-ele-4">Cart°</div>
+      <div class="navbar-ele-5" onclick="toggleBurger()">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+      </div>
+    </div>
+    <div class="dots">
+      <div class="dot dot1 dotActive" onclick="setSlide(1)"></div>
+      <div class="dot dot2" onclick="setSlide(2)"></div>
+      <div class="dot dot3" onclick="setSlide(3)"></div>
+      <div class="dot dot4" onclick="setSlide(4)"></div>
+      <div class="dot dot5" onclick="setSlide(5)"></div>
+    </div>
+    <div class="carousal-background">
+      <img src="assets\carousal\Homepage-FSP.webp" alt="" />
+      <img src="assets\carousal\Header-Fragment.webp" alt="" />
+      <img src="assets\carousal\Header-NM2.webp" alt="" />
+      <img src="assets\carousal\Header-Radio.webp" alt="" />
+      <img src="assets\carousal\Header-Mori.webp" alt="" />
+      <img src="assets\carousal\Homepage-FSP.webp" alt="" />
+      <img src="assets\carousal\Header-Fragment.webp" alt="" />
+    </div>
+
+    <div class="carousal-matter-box">
+      <div class="Box-5 Box">
+        <div class="textBox1 textBox">
+          <p>Font</p>
+        </div>
+        <div class="textBox2 textBox">
+          <p>Starter</p>
+        </div>
+        <div class="textBox3 textBox">
+          <p>Pack</p>
+        </div>
+        <div class="textBox4 textBox">
+          <p>4.0!</p>
+        </div>
+        <div class="Box-more-info">
+          <h1>FSP 4.0 is Here!</h1>
+          <p>
+            The font starter pack is the best option for every situation from
+            the biggest client to your close family.
+          </p>
+        </div>
+      </div>
+      <div class="Box-1 Box">
+        <div class="textBox1 textBox">
+          <p>Fragment</p>
+        </div>
+        <div class="textBox2 textBox">
+          <p>Såńș*</p>
+        </div>
+        <div class="textBox3 textBox">
+          <p>to→</p>
+        </div>
+        <div class="textBox4 textBox">
+          <p>Sëŗíf‽</p>
+        </div>
+        <div class="Box-more-info">
+          <div class="info-matter">
+            <h1>💠Fragment💠</h1>
+            <p>
+              Pangram Pangram’s 35th release uses the latest technology,
+              gracefully oscillating between an elegant, highly contrasted
+              Serif face, a revival mid-serif called Glare, and a strong Sans.
+            </p>
+          </div>
+          <div class="info-arrow">→</div>
+        </div>
+      </div>
+      <div class="Box-2 Box">
+        <div class="textBox1 textBox">
+          <p>Æ⅞¡ØЖ</p>
+        </div>
+        <div class="textBox2 textBox">
+          <p>Nēüè</p>
+        </div>
+        <div class="textBox3 textBox">
+          <p>§@°</p>
+        </div>
+        <div class="textBox4 textBox">
+          <p>2.0</p>
+        </div>
+        <div class="Box-more-info">
+          <h1>Neue Machina 2.0</h1>
+          <p>
+            It now comes in a Inktrap cut as well as a Plain cut for your more
+            subtle designs. Each cut comes with their corresponding italics
+            and everything is variable for maximum versatility!
+          </p>
+        </div>
+      </div>
+      <div class="Box-3 Box">
+        <div class="textBox1 textBox">
+          <p>Radio</p>
+        </div>
+        <div class="textBox2 textBox">
+          <p>Grotesk</p>
+        </div>
+        <div class="textBox3 textBox">
+          <p>2.0!</p>
+        </div>
+        <div class="textBox4 textBox">
+          <p>+Italics</p>
+        </div>
+        <div class="Box-more-info">
+          <h1>Radio Grotesk 2.0!</h1>
+          <p>
+            The very popular Radio Grotesk just got even better and bigger!
+            Now with 16 styles, Italics and Cyrillic.
+          </p>
+        </div>
+      </div>
+      <div class="Box-4 Box">
+        <div class="textBox1 textBox">
+          <p>Mori☀</p>
+        </div>
+        <div class="textBox2 textBox">
+          <p>is⏎</p>
+        </div>
+        <div class="textBox3 textBox">
+          <p>is⏎</p>
+        </div>
+        <div class="textBox4 textBox">
+          <p>Live!</p>
+        </div>
+        <div class="Box-more-info">
+          <h1>Very Mori</h1>
+          <p>
+            Mori is a versatile and sophisticated gothic sans serif inspired
+            by contemporary Japanese design, best suited for editorial,
+            graphic design and branding.
+          </p>
+        </div>
+      </div>
+      <div class="Box-5 Box">
+        <div class="textBox1 textBox">
+          <p>Font</p>
+        </div>
+        <div class="textBox2 textBox">
+          <p>Starter</p>
+        </div>
+        <div class="textBox3 textBox">
+          <p>Pack</p>
+        </div>
+        <div class="textBox4 textBox">
+          <p>4.0!</p>
+        </div>
+        <div class="Box-more-info">
+          <h1>FSP 4.0 is Here!</h1>
+          <p>
+            The font starter pack is the best option for every situation from
+            the biggest client to your close family.
+          </p>
+        </div>
+      </div>
+      <div class="Box-1 Box">
+        <div class="textBox1 textBox">
+          <p>Fragment</p>
+        </div>
+        <div class="textBox2 textBox">
+          <p>Såńș*</p>
+        </div>
+        <div class="textBox3 textBox">
+          <p>to→</p>
+        </div>
+        <div class="textBox4 textBox">
+          <p>Sëŗíf‽</p>
+        </div>
+        <div class="Box-more-info">
+          <div class="info-matter">
+            <h1>💠Fragment💠</h1>
+            <p>
+              Pangram Pangram’s 35th release uses the latest technology,
+              gracefully oscillating between an elegant, highly contrasted
+              Serif face, a revival mid-serif called Glare, and a strong Sans.
+            </p>
+          </div>
+          <div class="info-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="afterCarousal"></div> -->
+  <div class="aboutUs">
+    <hr width="100%" />
+    <h3>● About Us</h3>
+    <p>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp WE PROVIDE
+      (TREND-CONSCIOUS) FREE TO TRY FONTS FOR DESIGNERS → EACH TYPEFACE, EVERY
+      GLYPH IS CRAFTED WITH GREAT CARE AND ATTENTION TO DETAILS FOR YOUR
+      EVERYDAY DESIGNS ● BY THE WAY, ALL OUR FONTS ARE STARTING AT $30.
+    </p>
+  </div>
+  <div class="moreAboutUs">
+    <div class="ele-1">
+      New to our fonts? Be sure to check out our Font Starter Pack. You get 27
+      typefaces with a total of 144 weights ● That’s 60 extra weights that are
+      not available to try with the regular trial downloads including
+      versatile poster mockups.
+    </div>
+    <div class="ele-2">
+      <div class="ele-2-1 hover-underline-animation">
+        More About Us
+        <div class="arrow">→</div>
+      </div>
+      <div class="ele-2-2 hover-underline-animation">
+        Font Starter Pack
+        <div class="arrow">→</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="CardsContainer">
+    <!-- Showing x of y font families -->
+
+    <!-- Cards-row-1 -->
+    <div class="Cards-row Cards-row-1">
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cards-row-2 -->
+    <div class="Cards-row Cards-row-2">
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="circle">
+        <span class="circle-one">New to our fonts?</span>
+        <span class="circle-two">GET THE FONT</span>
+        <span class="circle-two">STARTER PACK</span>
+      </div>
+
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards-row-3 -->
+    <div class="Cards-row Cards-row-3">
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards-row-4 -->
+    <div class="Cards-row Cards-row-4">
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+      <div class="Card">
+        <div class="card-ribbon">💥New Font💥</div>
+        <div class="Card-ele-1">Aa</div>
+        <div class="Card-ele-2">
+          <div class="Card-ele-2-1">
+            Fragment Collection <br />
+            32 Style + Variable Cut <br />
+            From Sans to Serif
+          </div>
+          <div class="Card-ele-2-2">→</div>
+        </div>
+        <div class="Card-overlay">
+          <img src="assets/see.svg" alt="" />
+          <div class="overlay-ele-1">
+            Jackie will budget for the most expensive Zoology equipment
+          </div>
+          <div class="Card-ele-2">
+            <div class="Card-ele-2-1">
+              Fragment Collection <br />
+              32 Style + Variable Cut <br />
+              From Sans to Serif
+            </div>
+            <div class="Card-ele-2-2">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div style="position: relative;top: 160vh;z-index: 2;background-color: rgb(31, 31, 31);color: white;">
+    <div class="hover-ani">
+      <span class="hover-underline-animation">
+        See all our Fonts
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>→</span>
+      </span>
+    </div>
+    <div class="fonts-in-use">
+      <h5>● Font in use</h5>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        HERE ARE SOME BEAUTIFUL PROJECTS USING OUR FONTS ● YOU CAN GO CHECK OUT OUR FONT IN USE SECTION AND DON'T FORGET
+        TO SEND US YOUR PROJECTS USING OUR FONTS TO GET FEATURED.
+      </p>
+      <div class="flex-1">
+        <div>
+          <img src="assets\set1\PIZZA24-_xPangram_5_1920x.webp" alt="">
+          <div class="flex-2">
+            <span style="font-size: 20px; width:60%;">PIZZA 24</span>
+            <span style="color:gray;">Branding</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets\set1\42dc63146946153.62b9fda90a5ac_960x.webp" alt="">
+          <div class="flex-2">
+            <span style="font-size: 20px; width:60%;">Mural Urban Art Festival</span>
+            <span style="color:gray;">Event, Print</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <div>
+          <img src="assets\set1\A_RC_2041_Cover_960x.webp" alt="">
+          <div class="flex-2">
+            <span style="font-size: 20px; width:60%;">AR C</span>
+            <span style="color:gray;">Branding</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets\set1\Huspy_Cover_769311ab-7c2d-4350-b57b-724f3b86f5fb_960x.webp" alt="">
+          <div class="flex-2">
+            <span style="font-size: 20px; width:60%;">Huspy</span>
+            <span style="color:gray;">Branding</span>
+          </div>
+        </div>
+        <div>
+          <img src="assets\set1\why_cases_rpg_insta_post_75496938-c64a-4f3c-98bf-dbc17b73b01e_960x.webp" alt="">
+          <div class="flex-2">
+            <span style="font-size: 20px; width:60%;">Room Price Genie</span>
+            <span style="color:gray;">Branding</span>
+          </div>
+        </div>
+        <div class="flex-2"></div>
+      </div>
+      <div class="hover-ani">
+        <span class="hover-underline-animation">
+          See all Fonts in use
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>→</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="the-pangram-paper">
+      <div class="flex-1">
+        <div>
+          <img src="assets\set2\220708_Diversity_960x.webp" alt="">
+          <div style="color: gray;font-size: 18px;">Spotlight</div>
+          <div style="font-size: 35px;line-height: 95%;">How we can be more involved in increasing diversity in type
+            design</div>
+        </div>
+        <div>
+          <img src="assets\set2\220522_DesignBasics3_960x.webp" alt="">
+          <div style="color: gray;font-size: 18px;">Educational</div>
+          <div style="font-size: 35px;line-height: 95%;">Design Insights: Changing Tastes and Evolving Your Creative
+            Practice</div>
+        </div>
+        <div>
+          <img src="assets\set2\220522_DesignBasics2_960x.webp" alt="">
+          <div style="color: gray;font-size: 18px;">Educational</div>
+          <div style="font-size: 35px;line-height: 95%;">Design Insights: The Creative Process from Briefing to Delivery
+          </div>
+        </div>
+      </div>
+      <div class="hover-ani">
+        <span class="hover-underline-animation">
+          See all Articles
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>→</span>
+        </span>
+      </div>
+    </div>
+    <div class="bg-white">
+      <div class="flex-3">
+        <div class="flex-5">
+          <div class="flex-5-ele-1">
+            <div style="font-size: 35px;width: 50%;line-height: 100%;font-weight: 300;">
+              Subscribe to our newsletter to stay in touch with the latest.
+            </div>
+            <div class="input-hover-ani">
+              <input placeholder="Email Address"></input>
+              <span>→</span>
+            </div>
+          </div>
+          <div class="flex-0 flex-5-ele-2">
+            <div style="margin-bottom: 30px;color: gray;">Menu</div>
+            <div>All Fonts</div>
+            <div>Font Starter Pack</div>
+            <div>The Pangram Paper</div>
+            <div>Font in Use</div>
+            <div>About</div>
+            <div>Cart°</div>
+          </div>
+          <div class="flex-0 flex-5-ele-3">
+            <div style="margin-bottom: 30px;color: gray;">Support</div>
+            <div>FAQs</div>
+            <div>EULA</div>
+            <div>Font Lincenses</div>
+            <div>Contact</div>
+          </div>
+        </div>
+        <div style="display: flex;">
+          <div class="social-media">
+            <div><img src="assets/social-media/facebook-round.svg" alt=""></div>
+            <div><img src="assets/social-media/instagram-round.svg" alt=""></div>
+            <div><img src="assets/social-media/twitter-round.svg" alt=""></div>
+          </div>
+          <div style="font-size: 150px;margin-left:auto;margin-top: auto;line-height: 100%;">Aa*1</div>
+        </div>
+      </div>
+      <div style="padding: 10px 0;margin: 20px 0;border-top: 1px solid rgb(42, 42, 42);">
+        <span style="font-size: 25px;">●</span>
+        Available Fonts
+      </div>
+      <div class="flex-4">
+        <div class="flex-0">
+          <div>Neue Machina </div>
+          <div>Räder</div>
+          <div>Fraktion</div>
+          <div>Supply</div>
+          <div>Radio Groteska</div>
+          <div>Gatwick</div>
+          <div>Grafier</div>
+          <div>Gosha Sans</div>
+          <div>Chronos Serif</div>
+        </div>
+        <div class="flex-0">
+          <div>Mori</div>
+          <div>Right Gothic</div>
+          <div>Neue Montreal</div>
+          <div>Pangram Sans</div>
+          <div>Pangram Sans Rounded</div>
+          <div>Charlevoix Pro</div>
+          <div>Stellar Sans</div>
+          <div>Fuji Sans</div>
+          <div>Casa Stencil</div>
+        </div>
+        <div class="flex-0">
+          <div>Right Sans</div>
+          <div>Eiko</div>
+          <div>Bitmap Fonts</div>
+          <div>Telegraf</div>
+          <div>Pier Sans</div>
+          <div>Neue World</div>
+          <div>Right Grotesk</div>
+          <div>Hatton</div>
+        </div>
+        <div class="flex-0">
+          <div>Formula</div>
+          <div>Editorial New</div>
+          <div>Object Sans</div>
+          <div>Cirka</div>
+          <div>Migr</div>
+          <div>Monument Extended</div>
+          <div>Agrandir</div>
+          <div>Woodland</div>
+        </div>
+      </div>
+      <div class="conclude">
+        <div class="payment-methods" style="display: flex;">
+          <img src="assets/payment-methods/apple-pay.svg" alt="">
+          <img class="special-img" src="assets/payment-methods/paypal.svg" alt="">
+          <img src="assets/payment-methods/master-card.svg" alt="">
+          <img src="assets/payment-methods/visa.svg" alt="">
+        </div>
+        <div class="copyright">Copyright © Pangram Pangram® Foundry</div>
+        <div class="credit">Website by Locomotive</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="pangram.js"></script>
+
+</html>
