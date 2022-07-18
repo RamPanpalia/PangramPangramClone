@@ -136,23 +136,28 @@ window.addEventListener('scroll', () => {
     // var three="rgba(31, 31, 31,1)"
     // matter.style.backgroundColor='linear-gradient('+two+','+three+')';
 })
-
+var isClosed=true
 function toggleBurger(){
     let burger1=document.querySelector('.burger1')
     let burger2=document.querySelector('.burger2')
 
-    if(burger1.style.height==0){
+
+    if(isClosed){
         burger2.style.transitionDelay="0s";
         burger1.style.transitionDelay="0.25s";
         burger1.style.padding="30px";
         burger1.style.height="68vh";
         burger2.style.height="92vh";
+        // alert("opened")
+        isClosed=false
     }
     else{
         burger1.style.transitionDelay="0s";
         burger2.style.transitionDelay="0.25s";
         burger1.style.padding="0px";
-        burger1.style.height="0vh";
+        burger1.style.height="0px";
         burger2.style.height="0vh";
+        // alert("closed")
+        isClosed=true
     }
 }
