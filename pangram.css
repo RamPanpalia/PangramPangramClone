@@ -729,13 +729,14 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 .social-media svg:hover{
+    transition: 0.25s;
     fill: white;
-    border: 1px solid black;
-    border-radius: 50%;
     background-color: black;
 }
 
 .social-media img,svg {
+    border-radius: 50%;
+    border: 1px solid black;
     height: 30px;
     margin: 5px;
 }
