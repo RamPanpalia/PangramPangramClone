@@ -728,8 +728,14 @@ body::-webkit-scrollbar-thumb {
     margin-top: auto;
     padding: 5px;
 }
+.social-media svg:hover{
+    fill: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
 
-.social-media img {
+.social-media img,svg {
     height: 30px;
     margin: 5px;
 }
