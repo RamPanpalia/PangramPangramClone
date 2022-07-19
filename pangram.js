@@ -164,10 +164,10 @@ function toggleBurger(){
 }
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      const square1 = entry.target.querySelector('.p1');
-      const square2 = entry.target.querySelector('.p2');
-      const square3 = entry.target.querySelector('.p3');
-      const square4 = entry.target.querySelector('.p4');
+      const square1 = entry.target.querySelector('.textBox1 p');
+      const square2 = entry.target.querySelector('.textBox2 p');
+      const square3 = entry.target.querySelector('.textBox3 p');
+      const square4 = entry.target.querySelector('.textBox4 p');
   
       if (entry.isIntersecting) {
         square1.classList.add('animated-textBox');
