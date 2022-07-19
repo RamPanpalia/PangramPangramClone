@@ -742,6 +742,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .social-media img,svg {
+    cursor: pointer;
     border-radius: 50%;
     border: 1px solid black;
     height: 30px;
