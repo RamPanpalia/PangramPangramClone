@@ -465,6 +465,9 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     z-index: 1;
     color: rgb(31, 31, 31);
+    height: 0;
+    width: 0;
+    overflow: hidden;
 }
 
 .Card-overlay img {
