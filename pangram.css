@@ -77,6 +77,28 @@ body {
     transform: scale(1);
 }
 
+.navbar-black{
+    transition: 0.5s;
+    position: fixed;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    height: 0px;
+    overflow: hidden;
+}
+
+.navbar-black div {
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.navbar-black div:hover {
+    cursor: pointer;
+    color: rgb(105, 105, 105);
+}
+
 .navbar {
     position: absolute;
     width: 100%;
@@ -494,7 +516,7 @@ body::-webkit-scrollbar-thumb {
     height: 25px;
     transform: rotate(45deg) translate(90px, -50px);
     color: black;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     z-index: -1;
 }
@@ -781,3 +803,13 @@ svg {
 .flex-0>div {
     width: fit-content;
 }
+/* *{
+    background-color: white!important;
+    color: black !important;
+}
+.aboutUs{
+    background-color: none!important;
+}
+.Card{
+    border: 1px solid black;
+} */

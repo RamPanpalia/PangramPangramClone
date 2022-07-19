@@ -118,7 +118,7 @@ window.addEventListener('scroll', () => {
         let slope3 = (150 - 0) / (1104 - 2090);
         /*
         y-y1
-        ----  =  slope(val-y1)+x1
+        ----  =  slope => y=slope*(val-y1)+x1
         x-x1
         */
         document.querySelector('.Cards-row-2').style.marginTop = `${slope1 * (val - 1104) * 1.6 + 180}px`;
@@ -204,4 +204,25 @@ window.onscroll = function (e) {
         document.querySelector('.circle').style.transform = `rotate(${0}deg)`;
     }, 700);
     this.oldScroll = this.scrollY;
+}
+
+window.onscroll=function(e){
+    var scrollVal = this.scrollY;
+    // document.querySelector('.sc').innerHTML=this.scrollY;
+    //401-660
+    //0-50px
+/*
+    y-y1
+    ----  =  slope => y=slope*(val-y1)+x1
+    x-x1
+*/
+    if(scrollVal<402){
+        document.querySelector('.navbar-black').style.height=`${0}px`;
+    }
+    else if(scrollVal>401 && scrollVal<661){
+        document.querySelector('.navbar-black').style.height=`${(401-660)/(0-50)*(scrollVal-660)+50}px`;
+    }
+    else if(scrollVal>660){
+        document.querySelector('.navbar-black').style.height=`${50}px`;
+    }
 }
