@@ -127,15 +127,18 @@ body::-webkit-scrollbar-thumb {
     height: 0px;
     padding: 0;
 }
-.burger1-ele-1{
+
+.burger1-ele-1 {
     flex: 6;
     display: flex;
     flex-direction: column;
 }
-.burger1-ele-2{
+
+.burger1-ele-2 {
     flex: 3;
 }
-.burger1-ele-3{
+
+.burger1-ele-3 {
     flex: 1;
 }
 
@@ -151,11 +154,14 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     height: 0;
 }
-.burger2-ele-1{
+
+.burger2-ele-1 {
     flex: 3;
     margin-left: 20px;
 }
-.burger2-ele-2,.burger2-ele-3{
+
+.burger2-ele-2,
+.burger2-ele-3 {
     margin-bottom: 35px;
     flex: 1;
 }
@@ -259,7 +265,7 @@ body::-webkit-scrollbar-thumb {
 /* .textBox p {
     animation: show 1s;
 } */
-.animated-textBox{
+.animated-textBox {
     animation: show 1s;
 }
 
@@ -735,13 +741,15 @@ body::-webkit-scrollbar-thumb {
     margin-top: auto;
     padding: 5px;
 }
-.social-media svg:hover{
+
+.social-media svg:hover {
     transition: 0.25s;
     fill: white;
     background-color: black;
 }
 
-.social-media img,svg {
+.social-media img,
+svg {
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid black;

@@ -121,9 +121,9 @@ window.addEventListener('scroll', () => {
         ----  =  slope(val-y1)+x1
         x-x1
         */
-       document.querySelector('.Cards-row-2').style.marginTop = `${slope1 * (val - 1104) * 1.6 + 180}px`;
-       document.querySelector('.Cards-row-3').style.marginTop = `${slope2 * (val - 1104) * 1.6 + 60}px`;
-       document.querySelector('.Cards-row-4').style.marginTop = `${slope3 * (val - 1104) * 1.6 + 150}px`;
+        document.querySelector('.Cards-row-2').style.marginTop = `${slope1 * (val - 1104) * 1.6 + 180}px`;
+        document.querySelector('.Cards-row-3').style.marginTop = `${slope2 * (val - 1104) * 1.6 + 60}px`;
+        document.querySelector('.Cards-row-4').style.marginTop = `${slope3 * (val - 1104) * 1.6 + 150}px`;
     }
     else {
         document.querySelector('.Cards-row-2').style.marginTop = `${180}px`;
@@ -137,71 +137,71 @@ window.addEventListener('scroll', () => {
     // var three="rgba(31, 31, 31,1)"
     // matter.style.backgroundColor='linear-gradient('+two+','+three+')';
 })
-var isClosed=true
-function toggleBurger(){
-    let burger1=document.querySelector('.burger1')
-    let burger2=document.querySelector('.burger2')
+var isClosed = true
+function toggleBurger() {
+    let burger1 = document.querySelector('.burger1')
+    let burger2 = document.querySelector('.burger2')
 
 
-    if(isClosed){
-        burger2.style.transitionDelay="0s";
-        burger1.style.transitionDelay="0.25s";
-        burger1.style.padding="30px";
-        burger1.style.height="68vh";
-        burger2.style.height="92vh";
+    if (isClosed) {
+        burger2.style.transitionDelay = "0s";
+        burger1.style.transitionDelay = "0.25s";
+        burger1.style.padding = "30px";
+        burger1.style.height = "68vh";
+        burger2.style.height = "92vh";
         // alert("opened")
-        isClosed=false
+        isClosed = false
     }
-    else{
-        burger1.style.transitionDelay="0s";
-        burger2.style.transitionDelay="0.25s";
-        burger1.style.padding="0px";
-        burger1.style.height="0px";
-        burger2.style.height="0vh";
+    else {
+        burger1.style.transitionDelay = "0s";
+        burger2.style.transitionDelay = "0.25s";
+        burger1.style.padding = "0px";
+        burger1.style.height = "0px";
+        burger2.style.height = "0vh";
         // alert("closed")
-        isClosed=true
+        isClosed = true
     }
 }
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      const square1 = entry.target.querySelector('.textBox1 p');
-      const square2 = entry.target.querySelector('.textBox2 p');
-      const square3 = entry.target.querySelector('.textBox3 p');
-      const square4 = entry.target.querySelector('.textBox4 p');
-  
-      if (entry.isIntersecting) {
-        square1.classList.add('animated-textBox');
-        square2.classList.add('animated-textBox');
-        square3.classList.add('animated-textBox');
-        square4.classList.add('animated-textBox');
-        return; // if we added the class, exit the function
-      }
-  
-      // We're not intersecting, so remove the class!
-      square1.classList.remove('animated-textBox');
-      square2.classList.remove('animated-textBox');
-      square3.classList.remove('animated-textBox');
-      square4.classList.remove('animated-textBox');
-    });
-  });
-  
-  observer.observe(document.querySelector('.Box-1-dup'));
-  observer.observe(document.querySelector('.Box-1'));
-  observer.observe(document.querySelector('.Box-2'));
-  observer.observe(document.querySelector('.Box-3'));
-  observer.observe(document.querySelector('.Box-4'));
-  observer.observe(document.querySelector('.Box-5'));
-  observer.observe(document.querySelector('.Box-5-dup'));
+        const square1 = entry.target.querySelector('.textBox1 p');
+        const square2 = entry.target.querySelector('.textBox2 p');
+        const square3 = entry.target.querySelector('.textBox3 p');
+        const square4 = entry.target.querySelector('.textBox4 p');
 
-  window.onscroll = function(e) {
+        if (entry.isIntersecting) {
+            square1.classList.add('animated-textBox');
+            square2.classList.add('animated-textBox');
+            square3.classList.add('animated-textBox');
+            square4.classList.add('animated-textBox');
+            return; // if we added the class, exit the function
+        }
+
+        // We're not intersecting, so remove the class!
+        square1.classList.remove('animated-textBox');
+        square2.classList.remove('animated-textBox');
+        square3.classList.remove('animated-textBox');
+        square4.classList.remove('animated-textBox');
+    });
+});
+
+observer.observe(document.querySelector('.Box-1-dup'));
+observer.observe(document.querySelector('.Box-1'));
+observer.observe(document.querySelector('.Box-2'));
+observer.observe(document.querySelector('.Box-3'));
+observer.observe(document.querySelector('.Box-4'));
+observer.observe(document.querySelector('.Box-5'));
+observer.observe(document.querySelector('.Box-5-dup'));
+
+window.onscroll = function (e) {
     // print "false" if direction is down and "true" if up
-    var scrollVal=(this.oldScroll - this.scrollY)
-    var scrollUp=(this.oldScroll > this.scrollY)
+    var scrollVal = (this.oldScroll - this.scrollY)
+    var scrollUp = (this.oldScroll > this.scrollY)
     // document.querySelector('.sc').innerHTML=(this.oldScroll - this.scrollY);
-    document.querySelector('.circle').style.transition="0.5s";
-    document.querySelector('.circle').style.transform=`rotate(${scrollVal*3}deg)`;
+    document.querySelector('.circle').style.transition = "0.5s";
+    document.querySelector('.circle').style.transform = `rotate(${scrollVal * 3}deg)`;
     setTimeout(() => {
-        document.querySelector('.circle').style.transform=`rotate(${0}deg)`;
+        document.querySelector('.circle').style.transform = `rotate(${0}deg)`;
     }, 700);
     this.oldScroll = this.scrollY;
-  }
+}
