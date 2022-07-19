@@ -27,6 +27,7 @@ function markActive() {
 
 matter.addEventListener('scroll', () => {
     let ans = markActive();
+    document.querySelector('.textBox p').addClassList
     //     // let sl=slider.scrollLeft
     //     // var a=Math.floor(sl/width);
     //     if(ans=5){
@@ -161,3 +162,33 @@ function toggleBurger(){
         isClosed=true
     }
 }
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square1 = entry.target.querySelector('.p1');
+      const square2 = entry.target.querySelector('.p2');
+      const square3 = entry.target.querySelector('.p3');
+      const square4 = entry.target.querySelector('.p4');
+  
+      if (entry.isIntersecting) {
+        square1.classList.add('animated-textBox');
+        square2.classList.add('animated-textBox');
+        square3.classList.add('animated-textBox');
+        square4.classList.add('animated-textBox');
+        return; // if we added the class, exit the function
+      }
+  
+      // We're not intersecting, so remove the class!
+      square1.classList.remove('animated-textBox');
+      square2.classList.remove('animated-textBox');
+      square3.classList.remove('animated-textBox');
+      square4.classList.remove('animated-textBox');
+    });
+  });
+  
+  observer.observe(document.querySelector('.Box-1-dup'));
+  observer.observe(document.querySelector('.Box-1'));
+  observer.observe(document.querySelector('.Box-2'));
+  observer.observe(document.querySelector('.Box-3'));
+  observer.observe(document.querySelector('.Box-4'));
+  observer.observe(document.querySelector('.Box-5'));
+  observer.observe(document.querySelector('.Box-5-dup'));

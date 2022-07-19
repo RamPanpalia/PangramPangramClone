@@ -252,7 +252,10 @@ body::-webkit-scrollbar-thumb {
     overflow-y: hidden;
 }
 
-.textBox p {
+/* .textBox p {
+    animation: show 1s;
+} */
+.animated-textBox{
     animation: show 1s;
 }
 
