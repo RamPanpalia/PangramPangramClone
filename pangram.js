@@ -192,3 +192,16 @@ const observer = new IntersectionObserver(entries => {
   observer.observe(document.querySelector('.Box-4'));
   observer.observe(document.querySelector('.Box-5'));
   observer.observe(document.querySelector('.Box-5-dup'));
+
+  window.onscroll = function(e) {
+    // print "false" if direction is down and "true" if up
+    var scrollVal=(this.oldScroll - this.scrollY)
+    var scrollUp=(this.oldScroll > this.scrollY)
+    // document.querySelector('.sc').innerHTML=(this.oldScroll - this.scrollY);
+    document.querySelector('.circle').style.transition="0.5s";
+    document.querySelector('.circle').style.transform=`rotate(${scrollVal*3}deg)`;
+    setTimeout(() => {
+        document.querySelector('.circle').style.transform=`rotate(${0}deg)`;
+    }, 700);
+    this.oldScroll = this.scrollY;
+  }
