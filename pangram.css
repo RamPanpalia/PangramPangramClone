@@ -803,6 +803,12 @@ svg {
 .flex-0>div {
     width: fit-content;
 }
+/* .bar1{
+    transform: rotate(45deg) translate(1px,2.5px);
+}
+.bar2{
+    transform: rotate(-45deg) translate(0,-2.8px);
+} */
 /* *{
     background-color: white!important;
     color: black !important;

@@ -141,14 +141,20 @@ var isClosed = true
 function toggleBurger() {
     let burger1 = document.querySelector('.burger1')
     let burger2 = document.querySelector('.burger2')
-
-
+    
     if (isClosed) {
         burger2.style.transitionDelay = "0s";
         burger1.style.transitionDelay = "0.25s";
         burger1.style.padding = "30px";
         burger1.style.height = "68vh";
         burger2.style.height = "92vh";
+        document.querySelector('.navbar .bar1').style.transform="rotate(45deg) translate(1px,2.5px)"
+        document.querySelector('.burger1-ele-3 .bar1').style.transform="rotate(45deg) translate(1px,2.5px)"
+        document.querySelector('.navbar-black .bar1').style.transform="rotate(45deg) translate(1px,2.5px)"
+        
+        document.querySelector('.navbar .bar2').style.transform="rotate(-45deg) translate(0,-2.8px)"
+        document.querySelector('.burger1-ele-3 .bar2').style.transform="rotate(-45deg) translate(0,-2.8px)"
+        document.querySelector('.navbar-black .bar2').style.transform="rotate(-45deg) translate(0,-2.8px)"
         // alert("opened")
         isClosed = false
     }
@@ -158,6 +164,13 @@ function toggleBurger() {
         burger1.style.padding = "0px";
         burger1.style.height = "0px";
         burger2.style.height = "0vh";
+        document.querySelector('.navbar .bar1').style.transform="rotate(0) translate(0,0)"
+        document.querySelector('.burger1-ele-3 .bar1').style.transform="rotate(0) translate(0,0)"
+        document.querySelector('.navbar-black .bar1').style.transform="rotate(0) translate(0,0)"
+        
+        document.querySelector('.navbar .bar2').style.transform="rotate(0) translate(0,0)"
+        document.querySelector('.burger1-ele-3 .bar2').style.transform="rotate(0) translate(0,0)"
+        document.querySelector('.navbar-black .bar2').style.transform="rotate(0) translate(0,0)"
         // alert("closed")
         isClosed = true
     }
