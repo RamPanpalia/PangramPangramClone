@@ -204,18 +204,14 @@ window.onscroll = function (e) {
         document.querySelector('.circle').style.transform = `rotate(${0}deg)`;
     }, 700);
     this.oldScroll = this.scrollY;
-}
-
-window.onscroll=function(e){
-    var scrollVal = this.scrollY;
     // document.querySelector('.sc').innerHTML=this.scrollY;
     //401-660
     //0-50px
-/*
+    /*
     y-y1
     ----  =  slope => y=slope*(val-y1)+x1
     x-x1
-*/
+    */
     if(scrollVal<402){
         document.querySelector('.navbar-black').style.height=`${0}px`;
     }
