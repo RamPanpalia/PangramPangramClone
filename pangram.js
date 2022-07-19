@@ -203,8 +203,12 @@ window.onscroll = function (e) {
     setTimeout(() => {
         document.querySelector('.circle').style.transform = `rotate(${0}deg)`;
     }, 700);
-    this.oldScroll = this.scrollY;
+
     // document.querySelector('.sc').innerHTML=this.scrollY;
+}
+
+window.addEventListener('scroll',()=>{
+    var scrollVal = window.scrollY
     //401-660
     //0-50px
     /*
@@ -221,4 +225,5 @@ window.onscroll = function (e) {
     else if(scrollVal>660){
         document.querySelector('.navbar-black').style.height=`${50}px`;
     }
-}
+    this.oldScroll = this.scrollY;
+})
