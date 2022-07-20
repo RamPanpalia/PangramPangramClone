@@ -7,9 +7,29 @@
     /* border: 2px solid red; */
 }
 
+:root{
+    --white:#fff;
+    /* --white-shade-1:rgb(105, 105, 105);
+    --white-shade-2:rgb(198, 198, 198);
+    --white-shade-3:rgba(128, 128, 128, 0.433); */
+    --black:#000;
+    /* --black-to-none:black; */
+    --black-shade-1:rgb(31,31,31);
+    /* --black-shade-2:rgba(31, 31, 31, 0.734); */
+    /* --black-shade-3:rgba(31, 31, 31, 0.880); */
+    /* --gray:gray; */
+}
+.dark-mode{
+    --white:#000;
+    --black-shade-1:white;
+    --black-shade-2:rgba(255, 255, 255, 0.214);
+    --black-shade-3:rgba(255, 255, 255, 0.880);
+    --black:#fff;
+}
+
 ::selection {
     color: black;
-    background: white;
+    background: var(--white);
 }
 
 .bg-white {
@@ -23,15 +43,15 @@
 }
 
 .bg-white::selection {
-    color: white !important;
-    background-color: black !important;
+    color: var(--white) !important;
+    background-color: var(--black) !important;
 }
 
 body {
     /* position: relative; */
-    /* min-width: 100%;
-    min-height: 100%; */
-    background: rgb(31, 31, 31);
+    min-width: 100%;
+    min-height: 100%;
+    background: var(--black-shade-1);
     scroll-behavior: smooth;
 }
 
@@ -53,7 +73,7 @@ body {
 
 .bar {
     /* border: 1px solid red; */
-    background-color: white;
+    background-color: var(--white);
     flex: 1;
     padding: 0 !important;
     height: 2px;
@@ -80,10 +100,10 @@ body {
 .navbar-black{
     transition: 0.5s;
     position: fixed;
-    background-color: rgb(31, 31, 31);
-    color: white;
+    background-color: var(--black-shade-1);
+    color: var(--white);
     width: 100%;
-    z-index: 2;
+    z-index: 4;
     display: flex;
     height: 0px;
     overflow: hidden;
@@ -102,7 +122,7 @@ body {
 .navbar {
     position: absolute;
     width: 100%;
-    color: white;
+    color: var(--white);
     z-index: 2;
     display: flex;
 }
@@ -114,7 +134,7 @@ body {
 
 .navbar div:hover {
     cursor: pointer;
-    color: rgb(105, 105, 105);
+    color: var(--white-shade-1);
 }
 
 .navbar-ele-2 {
@@ -140,9 +160,9 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     z-index: 5;
     height: 68vh;
-    background-color: white;
+    background-color: var(--white);
     width: 100vw;
-    box-shadow: 0 2px 10px rgb(198, 198, 198);
+    box-shadow: 0 2px 10px var(--white-shade-2);
     display: flex;
     padding: 30px;
     overflow: hidden;
@@ -169,7 +189,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     z-index: 4;
     height: 92vh;
-    background-color: white;
+    background-color: var(--white);
     width: 100vw;
     display: flex;
     align-items: flex-end;
@@ -210,8 +230,8 @@ body::-webkit-scrollbar-thumb {
     width: 12px;
     margin: 0 10px;
     border-radius: 50%;
-    border: 1px solid white;
-    background-color: rgba(128, 128, 128, 0.433);
+    border: 1px solid var(--white);
+    background-color: var(--white-shade-3);
 }
 
 .dotActive {
@@ -357,27 +377,15 @@ body::-webkit-scrollbar-thumb {
     padding-left: 10px;
 }
 
-.afterCarousal {
-    top: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), black);
-    box-shadow: -10px -10px 100px black;
-    /* background-color: black; */
-    z-index: 1;
-    position: absolute;
-    height: 200px;
-    width: 100%;
-    color: white;
-}
-
 .aboutUs {
     position: absolute;
-    box-shadow: 0 -20px 30px rgba(31, 31, 31, 0.734);
+    box-shadow: 0 -20px 30px var(--black-shade-2);
     top: 100vh;
     z-index: 1;
-    background: linear-gradient(to bottom, rgba(31, 31, 31, 0.684), rgba(31, 31, 31, 0.880));
+    background: linear-gradient(to bottom, var(--black-shade-2), var(--black-shade-3));
     /* opacity: 0.95; */
     /* border-top: 1px solid white; */
-    color: white;
+    color: var(--white);
     padding: 30px 170px 30px 50px;
 }
 
@@ -390,9 +398,9 @@ body::-webkit-scrollbar-thumb {
 
 .moreAboutUs {
     top: 165.25vh;
-    color: white;
+    color: var(--white);
     background: rgb(31, 31, 31);
-    background: linear-gradient(to bottom, rgba(31, 31, 31, 0.880), rgba(31, 31, 31, 1));
+    background: linear-gradient(to bottom, var(--black-shade-3), var(--black-shade-1));
     position: relative;
     padding: 80px 100px;
     height: 450px;
@@ -452,23 +460,22 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(31, 31, 31);
     top: 160vh;
     z-index: 1;
-    color: white;
+    color: var(--white);
 }
 
 .Card {
     height: 400px;
-    /* width: 21%; */
     margin: 20px;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 4px;
     overflow: hidden;
-    color: whitesmoke;
+    color: var(--white);
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 1;
-    background-color: rgb(31, 31, 31);
+    background-color: var(--black-shade-1);
 }
 
 .Card>div {
@@ -495,7 +502,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 4px;
     top: 50%;
     left: 50%;
-    z-index: 1;
+    z-index: 2;
     color: rgb(31, 31, 31);
     height: 0;
     width: 0;
@@ -514,9 +521,10 @@ body::-webkit-scrollbar-thumb {
 .card-ribbon {
     width: 100%;
     height: 25px;
+    background-color: rgb(215, 215, 215);
     transform: rotate(45deg) translate(90px, -50px);
     color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(194, 194, 194);
     text-align: center;
     z-index: -1;
 }
@@ -550,7 +558,7 @@ body::-webkit-scrollbar-thumb {
 .CardsContainer {
     display: flex;
     padding: 20px 20px;
-    background-color: rgb(31, 31, 31);
+    background-color: var(--black-shade-1);
     justify-content: space-between;
 }
 
@@ -579,14 +587,14 @@ body::-webkit-scrollbar-thumb {
 } */
 
 .circle {
-    color: black;
+    color: var(--black);
     text-align: center;
     height: 300px;
     width: 300px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--white);
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -617,11 +625,11 @@ body::-webkit-scrollbar-thumb {
     width: fit-content;
     padding: 10px 0;
     font-size: 25px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(193, 193, 193);
 }
 
 .fonts-in-use {
-    border-top: 2px solid white;
+    border-top: 2px solid rgb(176, 176, 176);
     margin-top: 100px;
     margin: 150px 50px 10px 50px;
 }
@@ -803,11 +811,13 @@ svg {
 .flex-0>div {
     width: fit-content;
 }
-/* .bar1{
-    transform: rotate(45deg) translate(1px,2.5px);
-}
-.bar2{
-    transform: rotate(-45deg) translate(0,-2.8px);
+
+/* .image-overaly-animation{
+    position: fixed;
+    background-color: rgb(31, 31, 31);
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
 } */
 /* *{
     background-color: white!important;

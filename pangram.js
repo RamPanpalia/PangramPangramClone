@@ -215,7 +215,7 @@ window.onscroll = function (e) {
     document.querySelector('.circle').style.transform = `rotate(${scrollVal * 3}deg)`;
     setTimeout(() => {
         document.querySelector('.circle').style.transform = `rotate(${0}deg)`;
-    }, 700);
+    }, 100);
 
     // document.querySelector('.sc').innerHTML=this.scrollY;
 }
@@ -240,3 +240,13 @@ window.addEventListener('scroll',()=>{
     }
     this.oldScroll = this.scrollY;
 })
+
+document.querySelector('.theme-toggle').onclick=()=>{
+    document.body.classList.toggle("dark-mode");
+    if(document.querySelector('.theme-toggle').innerHTML=="● LightMode"){
+        document.querySelector('.theme-toggle').innerHTML=="● DarkMode";
+    }
+    else{
+        document.querySelector('.theme-toggle').innerHTML=="● LightMode";
+    }
+}
