@@ -241,12 +241,15 @@ window.addEventListener('scroll',()=>{
     this.oldScroll = this.scrollY;
 })
 
+let isDark=true
 document.querySelector('.theme-toggle').onclick=()=>{
     document.body.classList.toggle("dark-mode");
-    if(document.querySelector('.theme-toggle').innerHTML=="● LightMode"){
-        document.querySelector('.theme-toggle').innerHTML=="● DarkMode";
+    if(isDark){
+        document.querySelector('.theme-toggle').innerHTML="● DarkMode";
+        isDark=false;
     }
     else{
-        document.querySelector('.theme-toggle').innerHTML=="● LightMode";
+        document.querySelector('.theme-toggle').innerHTML="● LightMode";
+        isDark=true;
     }
 }
