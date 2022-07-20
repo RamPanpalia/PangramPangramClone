@@ -9,14 +9,14 @@
 
 :root{
     --white:#fff;
-    /* --white-shade-1:rgb(105, 105, 105);
+    --white-shade-1:rgb(105, 105, 105);
     --white-shade-2:rgb(198, 198, 198);
-    --white-shade-3:rgba(128, 128, 128, 0.433); */
+    --white-shade-3:rgba(128, 128, 128, 0.433);
     --black:#000;
     /* --black-to-none:black; */
     --black-shade-1:rgb(31,31,31);
-    /* --black-shade-2:rgba(31, 31, 31, 0.734); */
-    /* --black-shade-3:rgba(31, 31, 31, 0.880); */
+    --black-shade-2:rgba(31, 31, 31, 0.734);
+    --black-shade-3:rgba(31, 31, 31, 0.880);
     /* --gray:gray; */
 }
 .dark-mode{
